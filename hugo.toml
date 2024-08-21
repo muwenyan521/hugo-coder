@@ -1,5 +1,63 @@
-baseURL = "https://example.com/"
+baseurl = "http://home.wangxianming.us.kg"
+title = "王宪铭"
+theme = "hugo-coder"
+languagecode = "zh"
+defaultcontentlanguage = "zh"
 
+paginate = 20
+
+[services]
+[services.disqus]
+disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "王宪铭"
+  info = "积极进取的一名学生"
+  description = "王宪铭的私人主页"
+  keywords = "博客,开发者,私人"
+  avatarurl = "images/avatar.jpg"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2024
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/muwenyan521/"
+
+# Menu links
+[[menu.main]]
+  name = "博客"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "关于"
+  weight = 2
+  url = "about/"
 [module]
 [module.hugoVersion]
 min = "0.124.0"
